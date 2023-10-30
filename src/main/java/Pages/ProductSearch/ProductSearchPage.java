@@ -21,8 +21,8 @@ public class ProductSearchPage {
     private WebElement searchBtn;
     @FindBy(how = How.CSS, using = PRODUCTNAME)
     private List<WebElement> productName;
-    @FindBy(how = How.CSS, using = DATAPRODUCTATTRIBUTEFIELDLOCATOR)
-    private List<WebElement> dataProductAttributeField;
+    @FindBy(how = How.CSS, using = PRODUCTVARIANTLISTLOCATOR)
+    private List<WebElement> productVariantList;
     @FindBy(how = How.CSS, using = QANTITYDOWNBTNLOCATOR)
     private List<WebElement> quantityDownBtn;
     @FindBy(how = How.CSS, using = QUICKBUYQUANTITYINPUTFIELDLOCATOR)
@@ -31,8 +31,8 @@ public class ProductSearchPage {
     private List<WebElement> quantityUpBtn;
     @FindBy(how = How.CSS, using = ADDTOCARTBTNLOCATOR)
     private List<WebElement> addToCartBtn;
-    @FindBy(how = How.CSS, using = CARTQUANTITYAMOUNTCOUNTERLOCATOR)
-    private List<WebElement> cartQuantityAmountCounter;
+    @FindBy(how = How.CSS, using = CARTQUANTITYCOUNTERLOCATOR)
+    private WebElement cartQuantityCounter;
 
     public ProductSearchPage (WebDriver driver){
         this.driver = driver;
@@ -47,4 +47,13 @@ public class ProductSearchPage {
         FluentWait<WebDriver> wait = Utils.waitASpecificAmountOfTime(driver, 10, 500);
         wait.until(ExpectedConditions.visibilityOfAllElements(productName));
     }
+    public void addFirstProductToCart(){
+        if(!productName.isEmpty()){
+            addToCartBtn.get(0).click();
+        } else {
+            throw new IllegalStateException("Momentan nu sunt produse in aceasta categorie");
+        }
+    }
+    public String displayCartQuantityCount() {return cartQuantityCounter.getText();}
+    public boolean cartQuantityCounterIsDisplayed() {return cartQuantityCounter.isDisplayed();}
 }
