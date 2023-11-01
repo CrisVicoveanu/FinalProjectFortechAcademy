@@ -21,10 +21,6 @@ public class LoginPage {
     private WebElement passwordInputField;
     @FindBy(how = How.CSS, using = SUBMITBUTTONLOCATOR)
     private WebElement submitBtn;
-    @FindBy(how = How.CSS, using = SHOWPASSWORDBTNLOCATOR)
-    private WebElement showPasswordBtn;
-    @FindBy(how = How.CSS, using = FORGOTPASSWORDLINKLOCATOR)
-    private WebElement forgotPasswordLink;
     @FindBy(how = How.CSS, using = ERRORMESSAGEFIELDLOCATOR)
     private WebElement errorMessageField;
 
@@ -36,9 +32,6 @@ public class LoginPage {
     public void writeEmail (String email){emailInputField.sendKeys(email);}
     public void writePassword (String password){passwordInputField.sendKeys(password);}
     public void clickSubmitBtn (){submitBtn.click();}
-    public void clickShowPasswordBtn (){submitBtn.click();}
-    public void clickForgotPasswordLink (){forgotPasswordLink.click();}
-
     public void loginWithEmailAndPassword (String email, String password){
         writeEmail(email);
         writePassword(password);

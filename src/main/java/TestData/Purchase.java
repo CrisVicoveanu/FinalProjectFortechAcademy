@@ -1,16 +1,16 @@
 package TestData;
 
 public class Purchase {
-    private String firstProductName;
+    private String firstProduct;
     private String expectedNumberOfItemsAddedToCart;
 
     public Purchase(String firstProductName, int i) {
-        this.firstProductName = firstProductName;
+        this.firstProduct = firstProduct;
         this.expectedNumberOfItemsAddedToCart = expectedNumberOfItemsAddedToCart;
     }
 
     public String getFirstProductName() {
-        return firstProductName;
+        return firstProduct;
     }
     public String getExpectedNumberOfItemsAddedToCart() {
         return expectedNumberOfItemsAddedToCart;

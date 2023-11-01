@@ -20,18 +20,16 @@ public class BaseTest {
     public WebDriver wait;
     public String baseUrl = "https://www.ellemental.ro/";
     public String loginUrl = "https://www.ellemental.ro/autentificare?back=my-account";
-    private String searchUrl = "https://www.ellemental.ro/contul-meu";
+    public String searchUrl = "https://www.ellemental.ro/contul-meu";
     public String resultPageUrl = "https://www.ellemental.ro/cautare?controller=search&orderby=position&orderway=desc&ssa_submit=&search_query=";
     public String cartUrl = "https://www.ellemental.ro/cos?action=show";
     private LoginPage loginPage;
     private User user;
-    public Search search;
-    public SearchResult searchResult;
 
     @DataProvider(name = "searchQueriesFirstResult")
-    public Object[][] provideSearchQueriesFirstResult(String searchQuery, String searchResult) {
+    public Object[][] provideSearchQueriesFirstResult() {
         return new Object[][]{
-                new Object[]{new Search[]{new Search("ulei", "Ulei Caprilis")}},
+                {new Search("ulei","ulei")}
         };
     }
 
@@ -47,21 +45,15 @@ public class BaseTest {
         driver = new ChromeDriver(chromeOptions);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
         driver.get(loginUrl);
-        driver.get(searchUrl);
-        driver.get(resultPageUrl);
-        driver.get(cartUrl);
 
         loginPage = new LoginPage(driver);
         user = new User("criss.vicoveanu@gmail.com", "TestFortech.1");
         loginPage.loginWithEmailAndPassword(user.getEmail(), user.getPassword());
 
     }
-
-
-
     @AfterMethod
     public void tearDown() {
-        System.out.println("Tests are completed, webdriver is closing.");
+        System.out.println("Tests are completed, web-driver is closing.");
         driver.quit();
     }
 

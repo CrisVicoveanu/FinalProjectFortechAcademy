@@ -8,6 +8,7 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
+import org.testng.annotations.Test;
 
 import java.util.List;
 
@@ -28,19 +29,21 @@ public class ProductResultPage {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
-
-    public void waitForProductVisibility(){
+   public void waitForProductVisibility(){
         FluentWait<WebDriver> wait = Utils.waitASpecificAmountOfTime(driver, 10, 500);
         wait.until(ExpectedConditions.visibilityOfAllElements(productNameList));
     }
     public void addFirstProductToCart(){
         if(!productNameList.isEmpty()){
-            addToCartBtn.get(0).click();
+            WebElement firstProduct = productNameList.get(0);
+            WebElement addToCartBtnForFirstProduct = addToCartBtn.get(0);
+            addToCartBtnForFirstProduct.click();
         } else {
             throw new IllegalStateException("Momentan nu sunt produse in aceasta categorie");
         }
     }
     public String displayCartQuantityCount() {return cartQuantityCounter.getText();}
+
     public boolean cartQuantityCounterIsDisplayed() {return cartQuantityCounter.isDisplayed();}
 }
 

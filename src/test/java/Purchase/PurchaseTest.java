@@ -1,5 +1,6 @@
 package Purchase;
 
+import Pages.Cart.CartPage;
 import Pages.Login.LoginPage;
 import Pages.ProductResult.ProductResultPage;
 import Pages.ProductSearch.ProductSearchPage;
@@ -11,12 +12,26 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class PurchaseTest extends BaseTest {
-    @Test(description = "User autentificates on site, search a product and adds first result to shopping cart.", dataProvider = "searchQueriesFirstResult", dataProviderClass = BaseTest.class)
-    public void testSearchAndAddFirstResultToCart(Purchase firstProductName){
+    @Test(description = "User autentificates on site, search a product and adds first result to shopping cart.")
+    public void testSearchAndAddFirstResultToCart(){
+        driver.get(searchUrl);
+    ProductSearchPage productSearchPage = new ProductSearchPage(driver);
+    productSearchPage.searchProduct("ulei");
 
-        Search search = new Search(searchResult.getName(testSearch(Search )));
-        String getSearchFirstResult;
-    }
+    ProductResultPage productResultPage = new ProductResultPage(driver);
+    productResultPage.waitForProductVisibility();
+    productResultPage.addFirstProductToCart();
+
+    CartPage cartPage = new CartPage(driver);
+    driver.get(cartUrl);
+    boolean expectedStatus = true;
+    boolean actualStatus = cartPage.isProductInCart("ulei");
+    int expectedCount = 1;
+    int actualCount = cartPage.checkCartQuantityCount();
+
+    Assert.assertEquals(actualStatus,expectedStatus);
+    Assert.assertEquals(actualCount, expectedCount);
+}
 }
 
 
