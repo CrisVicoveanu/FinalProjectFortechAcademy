@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3e6df3b-94b9-4d15-8494-60ec36417e8d" name="Changes" comment="add TestData">
-      <change afterPath="$PROJECT_DIR$/src/main/java/TestData/Search.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Base/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Purchase/PurchaseTest.java" afterDir="false" />
+    <list default="true" id="e3e6df3b-94b9-4d15-8494-60ec36417e8d" name="Changes" comment="add BaseTest and partially PurchaseTest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/ProductResult/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/ProductResult/Locators.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/ProductResult/ProductResultPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/ProductResult/ProductResultPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TestData/Purchase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestData/Purchase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TestData/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestData/Search.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Purchase/PurchaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Purchase/PurchaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +56,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.537931&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -95,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698688210682</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add BaseTest and partially PurchaseTest">
+      <created>1698763955784</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1698763955784</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -114,6 +122,22 @@
     <MESSAGE value="add ProductSearchPage" />
     <MESSAGE value="add CartPage" />
     <MESSAGE value="add TestData" />
-    <option name="LAST_COMMIT_MESSAGE" value="add TestData" />
+    <MESSAGE value="add BaseTest and partially PurchaseTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="add BaseTest and partially PurchaseTest" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/TestData/Purchase.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

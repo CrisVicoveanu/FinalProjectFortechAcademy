@@ -15,19 +15,13 @@ import static Pages.ProductResult.Locators.*;
 
 public class ProductResultPage {
     private WebDriver driver;
-    @FindBy(how = How.CSS, using = PRODUCTNAME)
-    private List<WebElement> productName;
-    @FindBy(how = How.CSS, using = PRODUCTVARIANTLISTLOCATOR)
-    private List<WebElement> productVariantList;
-    @FindBy(how = How.CSS, using = QANTITYDOWNBTNLOCATOR)
-    private List<WebElement> quantityDownBtn;
-    @FindBy(how = How.CSS, using = QUICKBUYQUANTITYINPUTFIELDLOCATOR)
-    private List<WebElement> quickBuyQuantityInputField;
-    @FindBy(how = How.CSS, using = QUANTITYUPBTNLOCATOR)
-    private List<WebElement> quantityUpBtn;
+    @FindBy(how = How.CSS, using = PRODUCTNAMELOCATOR)
+    private List<WebElement> productNameList;
+    @FindBy(how = How.CSS, using = QUANTITYINPUTFIELDLOCATOR)
+    private WebElement quantityInputField;
     @FindBy(how = How.CSS, using = ADDTOCARTBTNLOCATOR)
     private List<WebElement> addToCartBtn;
-    @FindBy(how = How.CSS, using = CARTQUANTITYCOUNTERLOCATOR)
+    @FindBy(how = How.CSS, using = CARTCOUNTERLOCATOR)
     private WebElement cartQuantityCounter;
 
     public ProductResultPage(WebDriver driver) {
@@ -37,10 +31,10 @@ public class ProductResultPage {
 
     public void waitForProductVisibility(){
         FluentWait<WebDriver> wait = Utils.waitASpecificAmountOfTime(driver, 10, 500);
-        wait.until(ExpectedConditions.visibilityOfAllElements(productName));
+        wait.until(ExpectedConditions.visibilityOfAllElements(productNameList));
     }
     public void addFirstProductToCart(){
-        if(!productName.isEmpty()){
+        if(!productNameList.isEmpty()){
             addToCartBtn.get(0).click();
         } else {
             throw new IllegalStateException("Momentan nu sunt produse in aceasta categorie");

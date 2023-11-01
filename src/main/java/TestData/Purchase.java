@@ -1,18 +1,19 @@
 package TestData;
 
 public class Purchase {
-    private String productName;
-    private String expectedNumberOfItemsInCart;
-    public Purchase(String productName, String expectedNumberOfItemsInCart){
-        this.productName = productName;
-        this.expectedNumberOfItemsInCart = expectedNumberOfItemsInCart;
+    private String firstProductName;
+    private String expectedNumberOfItemsAddedToCart;
+
+    public Purchase(String firstProductName, int i) {
+        this.firstProductName = firstProductName;
+        this.expectedNumberOfItemsAddedToCart = expectedNumberOfItemsAddedToCart;
     }
 
-    public String getProductName() {
-        return productName;
+    public String getFirstProductName() {
+        return firstProductName;
     }
-
-    public String getExpectedNumberOfItemsInCart() {
-        return expectedNumberOfItemsInCart;
+    public String getExpectedNumberOfItemsAddedToCart() {
+        return expectedNumberOfItemsAddedToCart;
     }
 }
+
