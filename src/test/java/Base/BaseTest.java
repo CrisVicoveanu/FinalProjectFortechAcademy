@@ -1,8 +1,6 @@
 package Base;
 
 import Pages.Login.LoginPage;
-import Pages.ProductSearch.ProductSearchPage;
-import TestData.Purchase;
 import TestData.Search;
 import TestData.User;
 import org.openqa.selenium.WebDriver;
@@ -12,7 +10,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 
-import javax.naming.directory.SearchResult;
 import java.time.Duration;
 
 public class BaseTest {
@@ -49,12 +46,11 @@ public class BaseTest {
         loginPage = new LoginPage(driver);
         user = new User("criss.vicoveanu@gmail.com", "TestFortech.1");
         loginPage.loginWithEmailAndPassword(user.getEmail(), user.getPassword());
-
     }
+
     @AfterMethod
     public void tearDown() {
         System.out.println("Tests are completed, web-driver is closing.");
         driver.quit();
     }
-
-    }
+}

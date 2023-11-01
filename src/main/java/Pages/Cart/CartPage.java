@@ -1,6 +1,5 @@
 package Pages.Cart;
 
-import Pages.ProductResult.ProductResultPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,8 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-import static Pages.Cart.Locators.PRODUCTNAMELOCATOR;
-import static Pages.Cart.Locators.CARTPRODUCTQUANTITYLOCATOR;
+import static Pages.Cart.Locators.*;
 
 public class CartPage {
     private WebDriver driver;
@@ -32,10 +30,8 @@ public class CartPage {
                 return true;
             }
         }
-
         return false;
     }
-
     public int checkCartQuantityCount(){
         return Integer.parseInt(driver.findElement(By.cssSelector("a > span.header_icon_btn_icon.header_v_align_m.mar_r4 > span")).getText());
     }

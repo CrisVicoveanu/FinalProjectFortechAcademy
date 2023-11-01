@@ -13,5 +13,4 @@ public class Utils {
                 .pollingEvery(Duration.ofMillis(pollingTime))
                 .ignoring(NoSuchElementException.class);
     }
-
 }
