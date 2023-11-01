@@ -29,7 +29,7 @@ public class BaseTest {
     @DataProvider(name = "searchQueriesFirstResult")
     public Object[][] provideSearchQueriesFirstResult() {
         return new Object[][]{
-                {new Search("ulei","ulei")}
+                {new Search("ulei", "Ulei Caprilis")}
         };
     }
 

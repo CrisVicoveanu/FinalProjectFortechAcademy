@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e3e6df3b-94b9-4d15-8494-60ec36417e8d" name="Changes" comment="add changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Cart/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Cart/CartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Login/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Login/Locators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Login/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Login/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/ProductResult/ProductResultPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/ProductResult/ProductResultPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TestData/Purchase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestData/Purchase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Base/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Purchase/PurchaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Purchase/PurchaseTest.java" afterDir="false" />
     </list>
@@ -136,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698830613544</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add changes">
+      <created>1698857089994</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1698857089994</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -169,6 +171,11 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="TestNG">
+        <watch expression="actualCount" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

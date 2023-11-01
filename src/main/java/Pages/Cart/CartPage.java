@@ -24,13 +24,18 @@ public class CartPage {
         PageFactory.initElements(driver, this);
     }
     public boolean isProductInCart(String productName) {
-        for (WebElement element : productNames) {
+        By productLocator = By.cssSelector(PRODUCTNAMELOCATOR);
+        List<WebElement> productElements = driver.findElements(productLocator);
+
+        for (WebElement element : productElements) {
             if (element.getText().contains(productName)) {
                 return true;
             }
         }
+
         return false;
     }
+
     public int checkCartQuantityCount(){
         return Integer.parseInt(driver.findElement(By.cssSelector("a > span.header_icon_btn_icon.header_v_align_m.mar_r4 > span")).getText());
     }
