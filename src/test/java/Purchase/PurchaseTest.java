@@ -15,7 +15,6 @@ public class PurchaseTest extends BaseTest {
         productSearchPage.searchProduct("ulei");
 
         ProductResultPage productResultPage = new ProductResultPage(driver);
-        driver.get(resultPageUrl);
         productResultPage.waitForProductVisibility();
         productResultPage.addFirstProductToCart();
         String cartQuantityCounter = productResultPage.displayCartQuantityCount();

@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3e6df3b-94b9-4d15-8494-60ec36417e8d" name="Changes" comment="add changes">
+    <list default="true" id="e3e6df3b-94b9-4d15-8494-60ec36417e8d" name="Changes" comment="add final changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Cart/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Cart/CartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Login/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Login/Locators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Login/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Login/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/ProductResult/ProductResultPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/ProductResult/ProductResultPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/ProductSearch/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/ProductSearch/Locators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Util/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Util/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Purchase/PurchaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Purchase/PurchaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +53,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.PurchaseTest">
     <configuration name="PurchaseTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="EllementalSeleniumJavaIndividualProject" />
       <extension name="coverage">
@@ -79,9 +71,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PurchaseTest.testSearchAndAddFirstResultToCart" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="EllementalSeleniumJavaIndividualProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Purchase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Purchase" />
+      <option name="MAIN_CLASS_NAME" value="Purchase.PurchaseTest" />
+      <option name="METHOD_NAME" value="testSearchAndAddFirstResultToCart" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.PurchaseTest" />
+        <item itemvalue="TestNG.PurchaseTest.testSearchAndAddFirstResultToCart" />
       </list>
     </recent_temporary>
   </component>
@@ -150,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698859681843</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add final changes">
+      <created>1698864115489</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1698864115489</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,7 +189,8 @@
     <MESSAGE value="add TestData" />
     <MESSAGE value="add BaseTest and partially PurchaseTest" />
     <MESSAGE value="add changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="add changes" />
+    <MESSAGE value="add final changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="add final changes" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
