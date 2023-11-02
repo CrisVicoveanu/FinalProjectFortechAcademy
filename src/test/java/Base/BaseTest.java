@@ -14,11 +14,8 @@ import java.time.Duration;
 
 public class BaseTest {
     public WebDriver driver;
-    public WebDriver wait;
-    public String baseUrl = "https://www.ellemental.ro/";
     public String loginUrl = "https://www.ellemental.ro/autentificare?back=my-account";
     public String searchUrl = "https://www.ellemental.ro/contul-meu";
-    public String resultPageUrl = "https://www.ellemental.ro/cautare?controller=search&orderby=position&orderway=desc&ssa_submit=&search_query=";
     public String cartUrl = "https://www.ellemental.ro/cos?action=show";
     private LoginPage loginPage;
     private User user;
