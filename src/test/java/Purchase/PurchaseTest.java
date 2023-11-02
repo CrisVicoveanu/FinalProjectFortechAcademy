@@ -17,7 +17,6 @@ public class PurchaseTest extends BaseTest {
         ProductResultPage productResultPage = new ProductResultPage(driver);
         productResultPage.waitForProductVisibility();
         productResultPage.addFirstProductToCart();
-        String cartQuantityCounter = productResultPage.displayCartQuantityCount();
         boolean isCartQuantityCounterDisplayed = productResultPage.cartQuantityCounterIsDisplayed();
 
         CartPage cartPage = new CartPage(driver);
